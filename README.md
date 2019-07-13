@@ -8,15 +8,13 @@
 <p id="links"></p>
 
 <script>
-  
 
 var jsndata = new XMLHttpRequest();
 jsndata.onreadystatechange = function() {
   if (this.status==200 && this.readyState == 4) {
     var jsnobj = JSON.parse(this.responseText);
     var i, n;
-    for (i in jsnobj) {n += jsnobj[i].title;
-        }
+    for (i in jsnobj) {n += jsnobj[i].title}
         document.getElementById("links").innerHTML = n;
     }
 };
