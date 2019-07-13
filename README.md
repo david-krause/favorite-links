@@ -1,7 +1,10 @@
 <html>
 <body>
 
-<h2>Favorites</h2>
+<p>
+  Add links to JSON file using URL and Tags fields.
+  This html file will parse and alphbetize the JSON file.
+</p>
 
 <p id="links"></p>
 
