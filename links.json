@@ -1,5 +1,3 @@
-[{
-    "title":"Git","url":"https://www.github.com","tags":"tech",
-    "title":"Amz","url":"https://www.amazon.com","tags":"shopping",    
-    "title":"How To Geek","url":"https://www.howtogeek.com","tags":["tech","how-to"]
-} ]
+{"title":"Git","url":"https://www.github.com","tags":"tech"}
+,{"title":"Amz","url":"https://www.amazon.com","tags":"shopping"}    
+,{"title":"How To Geek","url":"https://www.howtogeek.com","tags":["tech","how-to"]}
