@@ -1,11 +1,19 @@
 <html>
 <body>
 <p>
-  Add links to JSON file.
+  Add links to JSON file. <br>
   Change "jsonsite" var in readme.md file to point to your json file.
 </p>
 
-<p id="links"></p>
+<table border="none">
+  <td>
+    <p id="links"></p>
+  </td>
+  <td>
+    <p id="cat"></p>
+  </td>
+</table>
+
 
 <script>
 var jsonsite="https://david-krause.github.io/favorite-links/links.json";
