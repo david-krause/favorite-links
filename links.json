@@ -1,11 +1,6 @@
----
----
 [
     {
-
-      "title"    : "Git",
-      "url"      : "https://www.github.com",
-      "tags"     : "tech",
-      
+      "title":"Git","url":"https://www.github.com","tags":"tech",
+      "title":"Amz","url":"https://www.amazon.com","tags":"shopping"    
     } 
 ]
