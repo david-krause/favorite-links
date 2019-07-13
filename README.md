@@ -11,10 +11,10 @@
   
 
 var jsndata = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
+jsndata.onreadystatechange = function() {
   if (this.status==200 && this.readyState == 4) {
     var jsnobj = JSON.parse(this.responseText);
-    for (i in jsnobj) {n += myObj[i].title;
+    for (i in jsnobj) {n += jsnobj[i].title;
         document.getElementById("links").innerHTML = n;
         }
   }
