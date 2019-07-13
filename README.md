@@ -8,7 +8,7 @@
 <p id="links"></p>
 
 <script>
-
+var jsonsite="https://david-krause.github.io/favorite-links/links.json";
 var jsndata = new XMLHttpRequest();
 jsndata.onreadystatechange = function() {
   if (this.status==200 && this.readyState == 4) {
@@ -18,7 +18,7 @@ jsndata.onreadystatechange = function() {
         document.getElementById("links").innerHTML = n;
     }
 };
-xmlhttp.open("GET", "{{ site.url }}/{{site.title}}/links.json",true);
+xmlhttp.open("GET", jsonsite,true);
 xmlhttp.send();
 
 </script>
