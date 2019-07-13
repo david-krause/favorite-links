@@ -1,4 +1,4 @@
 # favorite-links
 page for saving and categorizing favorite links
-- categorize links
+- categorize/tag links
 - search links
