@@ -6,12 +6,18 @@
 </p>
 
 <p id="links"></p>
+
 <script>
-
-
-var JSN = json;
+var JSN = {site.url}.{site.title}/links.json;
 var Obj = JSON.parse(JSN);
-document.getElementById("links").innerHTML = Obj.URL + " " + Obj.title;
+  
+for (i in Obj) {
+  x += myObj[i].title;
+}
+document.getElementById("links").innerHTML = x;
+
+
+
 </script>
 
 </body>
