@@ -8,16 +8,19 @@
 <p id="links"></p>
 
 <script>
-var JSN = {site.url}.{site.title}/links.json;
-var Obj = JSON.parse(JSN);
   
-for (i in Obj) {
-  x += myObj[i].title;
-}
-document.getElementById("links").innerHTML = x;
 
-
-
+var jsndata = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (ths.status==200 && this.readyState == 4) {
+    var jsnobj = JSON.parse(this.responseText);
+    for (i in jsnobj) {n += myObj[i].title;
+        document.getElementById("links").innerHTML = n;
+        }
+  }
+};
+xmlhttp.open("GET", "{{ site.url }}/{{site.title}}/links.json",true);
+xmlhttp.send();
 </script>
 
 </body>
