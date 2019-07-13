@@ -1,6 +1,6 @@
 <html>
+  <title>Favorite Links</title>
 <body>
-
 <p>
   Add links to JSON file using URL and Tags fields.<br>
   This html file will parse and alphbetize the JSON file.
@@ -10,9 +10,9 @@
 
 <script>
   json: 'https://www.github.io/favorite-links/links.json'
-var JSN = '{"URL":"https://github.com}';
+var JSN = json;
 var Obj = JSON.parse(JSN);
-document.getElementById("links").innerHTML = Obj.URL;
+document.getElementById("links").innerHTML = Obj.URL + " " + Obj.title;
 </script>
 
 </body>
