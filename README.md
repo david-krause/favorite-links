@@ -38,6 +38,15 @@ jsnhttp.onreadystatechange = function() {
 jsnhttp.open("GET", jsonsite,true);
 jsnhttp.send();
 }
+/****END OF ALL LINKS FUNCTION****/
+
+
+/*****LINKS BY CATEGORY*****/
+
+
+
+
+/*****END OF LINKS BY CATEGORY*****/
 </script>
 
 
