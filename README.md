@@ -5,7 +5,7 @@
   Change "jsonsite" var in html file to point to your json file.
 </p>
 
-<a href="#" onclick=all-links()>All Links</a>
+<a href="#" onclick="all-links()">All Links</a>
 <br>
 <a href="links-cat.html">Links by category</a>
 
