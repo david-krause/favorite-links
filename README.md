@@ -2,10 +2,10 @@
 <p>
   Add links to <a href="links.json">JSON file</a>. <br>
   Only one Title and URL allowed.  One or more categories required. <br>
-  Change "jsonsite" var in other html files to point to your json file.
+  Change "jsonsite" var in html file to point to your json file.
 </p>
 
-<a href="links-all.html">All Links</a>
+<a href="#" onclick=all-links()>All Links</a>
 <br>
 <a href="links-cat.html">Links by category</a>
 
@@ -15,6 +15,11 @@
 <script>
 /*Site that stores JSON file*/
 var jsonsite="https://david-krause.github.io/favorite-links/links.json";
+/******/
+
+/****ALL LINKS FUNCTION****/
+function all-links(){
+
 var jsnhttp = new XMLHttpRequest();
 /*perform this function one page is loaded*/
 jsnhttp.onreadystatechange = function() {
@@ -32,6 +37,7 @@ jsnhttp.onreadystatechange = function() {
 /*call site to get JSON data*/
 jsnhttp.open("GET", jsonsite,true);
 jsnhttp.send();
+}
 </script>
 
 
