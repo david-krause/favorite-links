@@ -40,8 +40,8 @@ jsnhttp.onreadystatechange = function() {
 		tgsurlarr.sort();
 		
 		/*lnks variable is set to the HTML paragraph*/
-	  	/*use join method to remove commas from array*/
-		document.getElementById("links").innerHTML = tgsurlarr.join("","");
+	  	/*use flat and join methods to remove commas from array*/
+		document.getElementById("links").innerHTML = tgsurlarr.flat().join("");
 	}	
 };
 
