@@ -8,4 +8,6 @@
 <a href="links-all.html">All Links</a>
 <br>
 <a href="links-cat.html">Links by category</a>
+<br>
+<a href="links.json">JSON file</a>
 </html>
