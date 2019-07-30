@@ -12,7 +12,8 @@
 <a href="links.json">JSON file</a>
 
 
-<br><p id="links"></p>
+<br><br>
+<p id="links"></p>
 
 <script>
 /*Site that stores JSON file*/
