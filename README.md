@@ -5,7 +5,7 @@
   Change "jsonsite" var in html file to point to your json file.
 </p>
 
-<a href="#" onclick="all-links()">All Links</a>
+<a href="#" onclick="alllinks()">All Links</a>
 <br>
 <a href="links-cat.html">Links by category</a>
 
@@ -18,7 +18,7 @@ var jsonsite="https://david-krause.github.io/favorite-links/links.json";
 /******/
 
 /****ALL LINKS FUNCTION****/
-function all-links(){
+function alllinks(){
 
 var jsnhttp = new XMLHttpRequest();
 /*perform this function one page is loaded*/
