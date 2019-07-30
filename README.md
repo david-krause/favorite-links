@@ -1,8 +1,8 @@
 <html>
 <p>
   Add links to <a href="links.json">JSON file</a>. <br>
-  Only one Title and URL allowed.  One or more categories required. <br>
-  Change "jsonsite" var in html file to point to your json file.
+  JSON file restrictions: 1 title, 1 url, 1+ categories<br>
+  Change "jsonsite" variable in README file to applicable json file.
 </p>
 
 <a href="#" onclick="alllinks()">All Links</a>
