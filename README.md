@@ -1,13 +1,13 @@
 <html>
 <p>
   Add links to <a href="links.json">JSON file</a>. <br>
-  JSON file restrictions: 1 title, 1 url, 1+ categories<br>
+  JSON file restrictions: 1 title, 1 url, 1+ tags/category.<br>
   Change "jsonsite" variable in README file to applicable json file.
 </p>
 
-<a href="#" onclick="alllinks()">All Links</a>
+<a href="#" onclick="alllinks()">All Favorites</a>
 <br>
-<a href="#" onclick="catlinks()">Links by category</a>
+<a href="#" onclick="catlinks()">Categorized Favorites</a>
 
 <br><br>
 <p id="links"></p>
