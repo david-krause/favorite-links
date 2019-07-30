@@ -18,9 +18,9 @@ jsnhttp.onreadystatechange = function() {
       }
     }
 	lnks.sort();
-	lnks.join('');
      /*lnks variable is set to the HTML paragraph*/
-    document.getElementById("links").innerHTML = lnks;
+	/*join method to remove commas*/
+    document.getElementById("links").innerHTML = lnks.join("");
 	};
 
 /*call site to get JSON data*/
