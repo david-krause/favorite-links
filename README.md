@@ -77,7 +77,7 @@ jsnhttp.onreadystatechange = function() {
 	  	/*use flat and join methods to remove commas from array
 		tgsurlarr.flat().join("")
 		*/
-		document.getElementById("links").innerHTML = tgsurlarr.toSting().replace(/,/g,"");
+		document.getElementById("links").innerHTML = tgsurlarr.join("").toString();
 	}	
 };
 /*call site to get JSON data*/
