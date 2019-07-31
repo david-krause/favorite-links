@@ -74,8 +74,9 @@ jsnhttp.onreadystatechange = function() {
 		tgsurlarr.sort();
 		
 		/*lnks variable is set to the HTML paragraph*/
-	  	/*use flat and join methods to remove commas from array
-		tgsurlarr.flat().join("")
+	  	/*use join, toString, and replace methods to remove commas from array
+		If there is a comma in the title or url that will be replaced as well.
+		this method also works but the "flat" method doesn't work on all browsers tgsurlarr.flat().join("")
 		*/
 		document.getElementById("links").innerHTML = tgsurlarr.join("").toString().replace(/,/g,"");
 	}	
