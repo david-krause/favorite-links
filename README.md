@@ -74,8 +74,10 @@ jsnhttp.onreadystatechange = function() {
 		tgsurlarr.sort();
 		
 		/*lnks variable is set to the HTML paragraph*/
-	  	/*use flat and join methods to remove commas from array*/
-		document.getElementById("links").innerHTML = tgsurlarr.flat().join("");
+	  	/*use flat and join methods to remove commas from array
+		tgsurlarr.flat().join("")
+		*/
+		document.getElementById("links").innerHTML = tgsurlarr.join("");
 	}	
 };
 /*call site to get JSON data*/
