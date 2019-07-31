@@ -1,5 +1,7 @@
 [
   {"title":"Github","url":"https://www.github.com","tags":["tech","code","programming"]},
   {"title":"Amazon","url":"https://www.amazon.com","tags":["shopping"]},
-  {"title":"How To Geek","url":"https://www.howtogeek.com","tags":["tech","how-to"]}
+  {"title":"How To Geek","url":"https://www.howtogeek.com","tags":["tech","how-to"]},
+  {"title":"Premier Guitar","url":"https://www.premierguitar.com","tags":["Guitar"]},
+  {"title":"Virus Total","url":"https://www.virustotal.com/","tags":["tech"]}
 ]
