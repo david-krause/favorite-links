@@ -1,7 +1,7 @@
 <html>
 <p>
   Add links to <a href="links.json">JSON file</a>. <br>
-  JSON file restrictions: 1 title, 1 url, 1+ tags/categories.<br>
+  JSON file restrictions: 1 title, 1 url, 1+ tags/categories. Categories must be lowercase to sort correctly.<br>
   Change "jsonsite" variable in README file to applicable json file.
 </p>
 
