@@ -53,7 +53,7 @@ jsnhttp.onreadystatechange = function() {
 		for(i in jsnObj){
 			/*loop through each tag (n) in site (i)*/
 			for(n in jsnObj[i].tags){
-			/******check to see if tag already exists in array*/
+			/******check to see if tag already exists in array******/
 				/*this function searches for the current category in tgsarr*/
 				function fndvar(tgsarrval){return tgsarrval == jsnObj[i].tags[n]};
 				
@@ -84,6 +84,4 @@ jsnhttp.send();
 }
 /*****END OF LINKS BY CATEGORY*****/
 </script>
-
-
 </html>
