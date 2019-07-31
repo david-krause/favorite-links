@@ -63,7 +63,7 @@ jsnhttp.onreadystatechange = function() {
 				if(tgsarr.findIndex(fndvar)<0){
 					var z = tgsarr.push(jsnObj[i].tags[n]);
 					/*create 2 dimension array of tag and url*/
-					tgsurlarr.push(["<strong>" + tgsarr[z-1] + "</strong><br>", "<a target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>"]);
+					tgsurlarr.push(["" + tgsarr[z-1] + "<br>", "<a target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>"]);
 				}else{
 					var z = tgsarr.findIndex(fndvar);
 					tgsurlarr[z].push("<a target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>");
