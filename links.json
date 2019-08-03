@@ -1,7 +1,17 @@
 [
-  {"title":"Github","url":"https://www.github.com","Archive":"false","tags":["tech","code","programming"]},
-  {"title":"Amazon","url":"https://www.amazon.com","Archive":"false","tags":["shopping"]},
-  {"title":"How To Geek","url":"https://www.howtogeek.com","Archive":"false","tags":["tech","how-to"]},
-  {"title":"Premier Guitar","url":"https://www.premierguitar.com","Archive":"false","tags":["guitar"]},
-  {"title":"Virus Total","url":"https://www.virustotal.com/","Archive":"false","tags":["tech"]}
+  {"title":"","url":"","Archive":"false","tags":[""]}
+  {"title":"Github","url":"https://www.github.com","Archive":"false","tags":["Tech","Code","Programming"]},
+  {"title":"Amazon","url":"https://www.amazon.com","Archive":"false","tags":["Shopping"]},
+  {"title":"How To Geek","url":"https://www.howtogeek.com","Archive":"false","tags":["Tech","How-To"]},
+  {"title":"Premier Guitar","url":"https://www.premierguitar.com","Archive":"false","tags":["Guitar"]},
+  {"title":"Virus Total","url":"https://www.virustotal.com/","Archive":"false","tags":["Tech"]}
+  {"title":"GitHub E-Books","url":"https://github.com/EbookFoundation/free-Programming-books","Archive":"false","tags":["Tech","Books"]}
+  {"title":"the-eye.eu","url":"https://the-eye.eu/public/Books/","Archive":"false","tags":["Books"]}
+  
+  {"title":"Free Code Camp","url":"https://www.freecodecamp.org/","Archive":"false","tags":["Code, Programming"]}
+  {"title":"","url":"","Archive":"false","tags":[""]}
+  {"title":"","url":"","Archive":"false","tags":[""]}
+  {"title":"","url":"","Archive":"false","tags":[""]}
+  {"title":"","url":"","Archive":"false","tags":[""]}
+  {"title":"","url":"","Archive":"false","tags":[""]}
 ]
