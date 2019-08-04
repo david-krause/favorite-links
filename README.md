@@ -3,7 +3,7 @@
   Add links to <a href="links.json">JSON file</a>. <br>
   JSON file restrictions: 1 title, 1 url, Archive=true or false, 1+ tags/categories. Categories must be lowercase to sort correctly.<br>
   if Archive=true then link will not display.<br>
-  Change "jsonsite" variable in README file to applicable json file.
+  Change "jsonsite" variable in README file to location of your JSON file.  Page works best if JSON file is located on web server.
 </p>
 
 <a href="#" onclick="alllinks()">All Favorites</a>
