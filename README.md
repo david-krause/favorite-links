@@ -1,9 +1,8 @@
 <html>
 <p>
   Add links to <a href="links.json">JSON file</a>. <br>
-  JSON file restrictions: 1 title, 1 url, Archive=true or false, 1+ tags/categories. Categories must be lowercase to sort correctly.<br>
-  if Archive=true then link will not display.<br>
-  Change "jsonsite" variable in README file to location of your JSON file.  Page works best if JSON file is located on web server.
+  JSON file restrictions: 1 title, 1 url, 1+ tags/categories. Categories must be lowercase to sort correctly.<br>
+  Change "jsonsite" variable in README file to applicable json file.
 </p>
 
 <a href="#" onclick="alllinks()">All Favorites</a>
@@ -15,7 +14,7 @@
 
 <script>
 /*Site that stores JSON file*/
-var jsonsite="https://david-krause.github.io/favorite-links/links.json";
+var jsonsite="links.json";
 /******/
 
 /****ALL LINKS FUNCTION****/
@@ -27,13 +26,12 @@ jsnhttp.onreadystatechange = function() {
   if (this.status == 200 && this.readyState == 4) {
     var i, n, lnks=[], jsnObj = JSON.parse(this.responseText);
     for(i in jsnObj){
-    	lnks.push("<a target='_blank' href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>")
+    	lnks.push("<a id=" + jsnObj[i].title + " target='_blank' href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>")
       }
     }
-	lnks.sort();
      /*lnks variable is set to the HTML paragraph*/
 	/*join method to remove commas*/
-    document.getElementById("links").innerHTML = lnks.join("");
+    document.getElementById("links").innerHTML = lnks.sort().join("");
 	};
 /*call site to get JSON data*/
 jsnhttp.open("GET", jsonsite,true);
@@ -64,21 +62,34 @@ jsnhttp.onreadystatechange = function() {
 				if(tgsarr.findIndex(fndvar)<0){
 					var z = tgsarr.push(jsnObj[i].tags[n]);
 					/*create 2 dimension array of tag and url*/
-					tgsurlarr.push(["<strong>" + tgsarr[z-1] + "</strong><br>", "<a target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>"]);
+					tgsurlarr.push(["<strong>" + tgsarr[z-1] + "</strong><br>", "<a id=" + jsnObj[i].title + " target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>"])
 				}else{
 					var z = tgsarr.findIndex(fndvar);
-					tgsurlarr[z].push("<a target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>");
+					tgsurlarr[z].push("<a id=" + jsnObj[i].title + " target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>")
 				};
 			}
 		}
 		/*Sort tagsurl array*/
 		tgsurlarr.sort();
-		
+    
+    /*Loop through each category array and sort each item*/
+    for(n in tgsarr){
+      	/*use shift to remove category from array*/
+        /*using shift because Category is first element of the array*/
+        var z = tgsurlarr[n].shift();
+        /*sort links in array*/
+        tgsurlarr[n].sort()
+        /*Add Category back to array*/
+        tgsurlarr[n].unshift(z);
+      }
+    
 		/*lnks variable is set to the HTML paragraph*/
 	  	/*use join, toString, and replace methods to remove commas from array
 		If there is a comma in the title or url that will be replaced as well.
 		this method also works but the "flat" method doesn't work on all browsers tgsurlarr.flat().join("")
 		*/
+		
+		//document.getElementById("links").innerHTML = tgsurlarr.join("").toString().replace(/,/g,"");
 		document.getElementById("links").innerHTML = tgsurlarr.join("").toString().replace(/,/g,"");
 	}	
 };
