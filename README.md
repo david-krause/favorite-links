@@ -46,13 +46,14 @@ jsnhttp.send();
 /*****LINKS BY CATEGORY FUNCTION*****/
 function catlinks(){
 var jsnhttp = new XMLHttpRequest();
-/*perform this function one page is loaded*/
+/*perform this function once page is loaded*/
 jsnhttp.onreadystatechange = function() {
   if (this.status == 200 && this.readyState == 4) {
 		/*declare variables and parse JSON file*/
    var i, n, z, tgsarr=[], tgsurlarr=[], jsnObj = JSON.parse(this.responseText);
 		/*loop through each site (i)*/
 		for(i in jsnObj){
+		if(jsnObj[i].Archive == "false"){
 			/*loop through each tag (n) in site (i)*/
 			for(n in jsnObj[i].tags){
 			/******check to see if tag already exists in array******/
@@ -71,6 +72,7 @@ jsnhttp.onreadystatechange = function() {
 					tgsurlarr[z].push("<a id=" + jsnObj[i].title + " target=_blank href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>")
 				};
 			}
+		};
 		}
 		/*Sort tagsurl array*/
 		tgsurlarr.sort();
@@ -94,6 +96,7 @@ jsnhttp.onreadystatechange = function() {
 		
 		//document.getElementById("links").innerHTML = tgsurlarr.join("").toString().replace(/,/g,"");
 		document.getElementById("links").innerHTML = tgsurlarr.join("").toString().replace(/,/g,"");
+		
 	}	
 };
 /*call site to get JSON data*/
