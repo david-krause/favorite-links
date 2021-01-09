@@ -1,8 +1,9 @@
 <html>
 <p>
-  Add links to <a href="links.json">JSON file</a>. <br>
-  JSON file restrictions: 1 title, 1 url, 1+ tags/categories. Categories must be lowercase to sort correctly.<br>
-  Change "jsonsite" variable in README file to applicable json file.
+  This webpage will display links stored in this <a href="https://gist.github.com/david-krause/f4d558c72f47a0e475ffad233fdfb800/raw/">JSON file</a>. <br>
+  The JSON file contains title, url, tags (categories), and archive flags. <br>
+  JSON file format limitations are 1 title, 1 url, 1+ tags/categories. Categories must be lowercase to sort correctly.<br>
+  Download the README file and convert to html page or load on webserver.  Then change the "jsonsite" variable in the README file to applicable your applicable JSON file.
 </p>
 
 <a href="#" onclick="alllinks()">All Favorites</a>
@@ -15,7 +16,6 @@
 <script>
 /*Site that stores JSON file*/
 var jsonsite="https://gist.githubusercontent.com/david-krause/f4d558c72f47a0e475ffad233fdfb800/raw/";
-/*var jsonsite="links.json";*/
 /******/
 
 /****ALL LINKS FUNCTION****/
