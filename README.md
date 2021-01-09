@@ -27,7 +27,9 @@ jsnhttp.onreadystatechange = function() {
   if (this.status == 200 && this.readyState == 4) {
     var i, n, lnks=[], jsnObj = JSON.parse(this.responseText);
     for(i in jsnObj){
-    	lnks.push("<a id=" + jsnObj[i].title + " target='_blank' href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>")
+    	if(jsnObj[i].Archive == false){
+    		lnks.push("<a id=" + jsnObj[i].title + " target='_blank' href=" + jsnObj[i].url + ">" + jsnObj[i].title + "</a><br>")
+	};
       }
     }
      /*lnks variable is set to the HTML paragraph*/
