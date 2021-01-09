@@ -14,8 +14,8 @@
 
 <script>
 /*Site that stores JSON file*/
-/*var jsonsite="https://gist.githubusercontent.com/david-krause/f4d558c72f47a0e475ffad233fdfb800/raw/a227e460274fce832508e859d8887b44346abb2e/links.json";*/
-var jsonsite="links.json";
+var jsonsite="https://gist.githubusercontent.com/david-krause/f4d558c72f47a0e475ffad233fdfb800/raw/a227e460274fce832508e859d8887b44346abb2e/links.json";
+/*var jsonsite="links.json";*/
 /******/
 
 /****ALL LINKS FUNCTION****/
