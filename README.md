@@ -6,9 +6,9 @@
   Download the README file and change the "jsonsite" variable in the README file to point to your applicable JSON file.
 </p>
 
-<a href="#" onclick="alllinks()">All Favorites</a>
+<a href="#" onclick="alllinks()">View All Links</a>
 <br>
-<a href="#" onclick="catlinks()">Categories</a>
+<a href="#" onclick="catlinks()">View Links by Category</a>
 
 <br><br>
 <p id="links"></p>
