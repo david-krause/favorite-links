@@ -6,7 +6,6 @@
   Download the README file and change the "jsonsite" variable in the README file to point to your applicable JSON file.
 </p>
 
-https://gist.githubusercontent.com/david-krause/058b8451adfb4523ef42655816bb1551/raw/
 
 <a href="#" onclick="alllinks()">View All Links</a>
 <br>
