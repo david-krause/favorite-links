@@ -1,6 +1,6 @@
 <html>
 <p>
-  This webpage will display links stored in this <a href="https://gist.github.com/david-krause/f4d558c72f47a0e475ffad233fdfb800/raw/">JSON file</a>. <br>
+  This webpage will display links stored in this <a href="https://gist.githubusercontent.com/david-krause/058b8451adfb4523ef42655816bb1551/raw/">JSON file</a>. <br>
   The JSON file contains title, url, tags (categories), and archive flags. <br>
   The JSON file format limitations are 1 title, 1 url, 1+ tags/categories. Categories must be lowercase to sort correctly.<br>
   Download the README file and change the "jsonsite" variable in the README file to point to your applicable JSON file.
