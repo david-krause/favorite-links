@@ -16,7 +16,7 @@
 
 <script>
 /*Site that stores JSON file*/
-var jsonsite="https://gist.githubusercontent.com/david-krause/058b8451adfb4523ef42655816bb1551/raw/";
+var jsonsite="https://gist.github.com/david-krause/f4d558c72f47a0e475ffad233fdfb800/raw/";
 /******/
 
 /****ALL LINKS FUNCTION****/
